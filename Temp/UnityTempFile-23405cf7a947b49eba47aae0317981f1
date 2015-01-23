@@ -41,8 +41,9 @@
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_OSX
+'Assets/Scripts/Backups/LeftFootRocket.cs'
+'Assets/Scripts/JetPack.cs'
 'Assets/Scripts/LeftArmRocket.cs'
-'Assets/Scripts/LeftFootRocket.cs'
 'Assets/Scripts/RightArmRocket.cs'
 'Assets/Scripts/RightFootRocket.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'

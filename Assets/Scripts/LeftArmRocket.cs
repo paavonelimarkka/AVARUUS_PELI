@@ -7,7 +7,7 @@ public class LeftArmRocket : MonoBehaviour {
 
 	void Update() {
 		if (Input.GetButton("d")) {
-			rigidbody2D.AddRelativeForce(Vector2.right * -forceMultiplier * Time.deltaTime);
+			rigidbody2D.AddRelativeForce(Vector2.right * forceMultiplier * Time.deltaTime);
 		}
 	}
 
