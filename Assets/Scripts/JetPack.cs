@@ -10,5 +10,9 @@ public class JetPack : MonoBehaviour {
 			rigidbody2D.AddRelativeForce(Vector2.up * forceMultiplier * Time.deltaTime);
 		}
 	}
-	
+
+	void OnBecameInvisible () {
+		Application.LoadLevel("gameover");
+	}
+
 }
