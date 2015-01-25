@@ -6,8 +6,9 @@ public class spawner : MonoBehaviour {
 
 	public bool koira = true;
 	public Rigidbody2D Asteroidi;
-	public float meteorSpeed;
-	public float waitTime;
+	public int meteorSpeed;
+	public float minTime;
+	public float maxTime;
 	private Transform Spawn;
 
 
@@ -17,7 +18,7 @@ public class spawner : MonoBehaviour {
 
 	IEnumerator Spawner() {
 		while (koira = true) {
-			yield return new WaitForSeconds(waitTime);
+			yield return new WaitForSeconds(Random.Range(minTime, maxTime));
 			Rigidbody2D clone = (Rigidbody2D)Instantiate(Asteroidi,transform.position,transform.rotation);
 			clone.AddRelativeForce(Vector2.up * meteorSpeed);
 		}

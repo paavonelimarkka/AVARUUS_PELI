@@ -11,8 +11,4 @@ public class JetPack : MonoBehaviour {
 		}
 	}
 
-	void OnBecameInvisible () {
-		Application.LoadLevel("gameover");
-	}
-
 }
