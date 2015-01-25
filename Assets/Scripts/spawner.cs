@@ -6,7 +6,7 @@ public class spawner : MonoBehaviour {
 
 	public bool koira = true;
 	public Rigidbody2D Asteroidi;
-	public int meteorSpeed;
+	public float meteorSpeed;
 	public float minTime;
 	public float maxTime;
 	private Transform Spawn;
